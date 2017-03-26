@@ -17,7 +17,7 @@ subprojects {
   }
   
   group = 'com.tkmtwo'
-  version = '0.0.0'
+  version = '0.1.0'
   
   ext {
     
@@ -25,11 +25,11 @@ subprojects {
     // Dependency Versions
     //
     depVersionGuava = '18.0'
-    depVersionJackson = '2.4.3'
+    //depVersionJackson = '2.4.3'
     depVersionJunit = '4.11'
-    depVersionLogback = '1.1.2'
-    depVersionMockito = '1.10.4'
-    depVersionSlf4J = '1.7.7'
+    //depVersionLogback = '1.1.2'
+    //depVersionMockito = '1.10.4'
+    //depVersionSlf4J = '1.7.7'
     depVersionTkmTwoCommon = '1.0.0'
     depVersionSpringFramework = '4.1.6.RELEASE'
 
@@ -48,6 +48,6 @@ subprojects {
 
 
 task wrapper(type: Wrapper) { 
-  gradleVersion = '2.1'
+  gradleVersion = '3.4.1'
 }
 

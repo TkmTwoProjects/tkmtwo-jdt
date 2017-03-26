@@ -5,17 +5,10 @@ apply plugin: 'maven'
 
 
 dependencies {
-  compile "com.google.guava:guava:${depVersionGuava}"
-  compile "com.tkmtwo:tkmtwo-common:${depVersionTkmTwoCommon}"
-
-  //runtime "ch.qos.logback:logback-classic:${depVersionLogback}"
-  //runtime "ch.qos.logback:logback-core:${depVersionLogback}"
-  //runtime "org.slf4j:jcl-over-slf4j:${depVersionSlf4J}"
-  //runtime "org.slf4j:jul-to-slf4j:${depVersionSlf4J}"
-  //runtime "org.slf4j:log4j-over-slf4j:${depVersionSlf4J}"
+  compile project(':core')
+  compile "org.springframework:spring-context:${depVersionSpringFramework}"
 
   testCompile "junit:junit:${depVersionJunit}"
-  
 }
 
 uploadArchives {
